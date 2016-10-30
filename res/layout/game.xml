@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:background="@drawable/game_background"
+    android:id="@+id/environment"
+    >
+    
+    <com.su.poke.MessageView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/message" />
+    
+     <ImageView
+         android:id="@+id/time_roller"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/message"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="14dp"
+         android:layout_marginLeft="42dp"
+         android:src="@drawable/time_roller" />  
+     <com.su.poke.Game
+         android:id="@+id/game"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         />
+
+      <com.su.poke.TimeRoller
+          android:id="@+id/time_item"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/time_roller" 
+          android:layout_alignLeft="@+id/time_roller"       
+          android:layout_marginBottom="8dp"
+          android:layout_marginLeft="45dp"
+           />
+
+       <ImageView
+           android:id="@+id/level_num"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/time_roller"
+           android:layout_toRightOf="@+id/time_roller"
+           android:src="@drawable/level_num" />
+
+       <ImageView
+           android:id="@+id/lv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/level_num"
+           android:layout_alignLeft="@+id/level_num"
+           android:layout_marginLeft="66dp"
+           android:layout_marginBottom="6dp"           
+           android:src="@drawable/lv1" />
+
+       <com.su.poke.GameOverView
+           android:id="@+id/game_over"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:visibility="gone" />
+         <com.su.poke.GameWinView
+           android:id="@+id/game_winner"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:visibility="gone" />
+       
+       <com.su.poke.GameSetView_2
+           android:id="@+id/game_set"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:visibility="gone" />
+       
+       <com.su.poke.GameNextView
+           android:id="@+id/game_next"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:visibility="gone" />
+     
+</RelativeLayout>

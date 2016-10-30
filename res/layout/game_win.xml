@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"    
+    android:layout_height="277dp"
+    android:background="@drawable/winner" >
+
+    <ImageButton
+        android:id="@+id/button_restart"
+        android:tag="button_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/button_restart" />
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:tag="button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/button" />
+
+    <com.su.poke.DialogNumView
+        android:id="@+id/scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_restart"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="87dp"
+        android:tag="scores" />
+
+</RelativeLayout>
